@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width,
               initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		
 		<style>
 		
 		</style>
@@ -14,14 +15,14 @@
     <body>
         <h1 onclick="alert('123')">标题标签</h1> <!--行内的js脚本，不推荐-->
 		<input type="button" value="button">
-		 <!---->
+		
 		<script> 
 			// 顺序运行到这里时，发现这是个js脚本，会交给js执行引擎。js单行注释用//
 			// 嵌入的js脚本，一般会写在body之前
 			alert('demo-alert')
 		</script>
 		
-		<script src="./js/01.js"></script>
+		<script src="./js/01.js"></script>  <!-- 外部的js-->
 		
     </body>
 </html>
