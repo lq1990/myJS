@@ -1,0 +1,258 @@
+<!doctype html>
+<html>
+	<head>
+		<title>JS</title>
+		<meta charset="utf-8">
+		
+	</head>
+	
+	<body>
+		<script>
+			/*
+			// 1-100 sum
+			var sum=0;
+			for(var i=1;i<=100;i++){
+				sum += i;
+			}
+			console.log(sum);
+			
+			// 斐波那契数列
+			var a=0, b=1,temp;
+			console.log(a)
+			console.log(b)
+			for  (;b<100;) {
+				if(b+a <100)
+					console.log(b+a);
+				temp = a;
+				a=b;
+				b=temp+b;
+				
+			}
+			console.log("\n");
+			
+			var a=0, b=1,temp;
+			console.log(a)
+			console.log(b)
+			while(b+a <100) {
+				console.log(b+a);
+				temp = a;
+				a=b;
+				b=temp+b;
+			}
+			
+			var day = "monday"
+			switch (day)
+			{
+				case "monday":
+					console.log("today is monday");
+					break;
+				default:
+					console.log("which day?");
+			}
+			
+			var num=751;
+			for(var i=2; i<num;i++){
+				if(num%i == 0){
+					console.log(num+" is not a prime number.");
+					break;
+					
+				}
+			}
+			console.log("i is "+i);
+			if (i == num)
+				console.log(num+ " is a prime number.");
+			
+			
+			// function
+			add();
+			
+			function add() {
+				console.log("my func");
+			}
+			
+			add();
+			
+			
+			function mult( a,  b) {
+				//console.log(a*b);
+				return a*b;
+			}
+			
+			var t = mult(2,4);
+			console.log("t: "+t);
+			
+			
+			// 函数封装
+			function sum(n) {
+				if(typeof(n) != "number"){
+					return NaN;
+				}
+				if(n<1){
+					return;
+				}
+				
+				var i=1, result=0;
+				while(i<=n){
+					result += i;
+					i++;
+				}
+				return result;
+			}
+			
+			var t=sum(3);
+			console.log(t);
+			
+			function getWeekName(n){
+				if(typeof(n) != "number" || n<1 || n>7){
+					return "not normal type."
+				}
+				
+				switch (n)
+				{
+					case 1:
+						t = "monday";
+						break;
+					case 2:
+						t = "Tuesday";
+						break;
+					case 3:
+						t = "Wednesday";
+						break;
+					case 4:
+						t = "Thursday";
+						break;
+					case 5:
+						t = "Friday";
+						break;
+					case 6:
+						t = "Saturday";
+						break;
+					case 7:
+						t = "Sunday";
+						break;
+					
+				}
+				return t;
+			}
+			
+			
+			// 匿名函数, 此处a声明为函数类型。匿名函数不能进行函数提升。
+			var a = function (n){
+				return n*2;
+			}
+			
+			console.log(a(5));
+			
+			// Object类型。
+			// 创建对象
+			// 1. use  new
+			var t = new Object();
+			t.age = 19;
+			t.name="jeck";
+			t['demo']="demo...";
+			t.run=function(){
+				console.log("run....");
+			}
+			// 2. 字面量方式，JSON格式。
+			var a = {
+				name:"itcast",
+				show:"http://www.ss.cn",
+				run: function () {
+					console.log("laoma run...")
+				}
+			}
+			
+			a.color="yellow";
+			console.log("name" in a);
+			delete a.name;
+			console.log("name" in a);
+			
+			for(var k in t){
+				console.log(k);
+				console.log(typeof(k));
+				if (typeof( t[k] )=="number") { // t[k] 不能用t.k，因为k为string
+					console.log( t[k] )
+				}
+			}
+			*/
+			// 对象封装练习
+			var cat = {
+				color:"red",
+				weight:20,
+				name:"kimi",
+				id:1234,
+				run: function(){
+					console.log(this.name+" run...")
+				},
+				jump: function(){
+				
+				}
+				
+			}
+			
+			cat.run();
+			// 输出猫所有自定义属性
+			console.log("\n");
+			for(var k in cat) {
+				console.log(k)
+			};
+			
+			//  封装一个 数学对象
+			var  myMath = {
+				PI:3.141,
+				sum: function(n){
+					var res = 0;
+					for(var i =1;i<=n;i++){
+						res +=i;
+					}
+					return res;
+				},
+				
+				factorial: function(n) {
+					var res2 = 1;
+					for(var i=1;i<=n;i++){
+						res2 *= i;
+					}
+					return res2;
+				},
+				
+			};
+			
+			console.log( myMath.PI);
+			console.log( myMath.sum(4));
+			console.log( myMath.factorial(4));
+			
+		</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
