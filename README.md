@@ -7,3 +7,12 @@ Conclusion:
 	
 2. interesting and useful syntaxes
 	e.g. &&, ||, ===, +, calc of string, 
+
+3. create Object:
+	var t = new Object(); t.age=18; t.name=""; t.run=function(){}
+	or
+	var t = {
+		age:18,
+		name:"abc",
+		run: function(){},
+	};
