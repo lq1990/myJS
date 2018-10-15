@@ -1,0 +1,12 @@
+var t = new String("abcdkjfklajklfAFDAffdaf");
+console.log(t.charAt(1));
+.charCodeAt();
+.concat();
+.slice();
+.toLowerCase();
+.toUpperCase();
+.replace();
+.trim();
+.substring();
+.substr();
+String.fromCharCode();
