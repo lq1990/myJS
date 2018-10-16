@@ -1,1 +1,0 @@
-alert('i am an extern js.')
