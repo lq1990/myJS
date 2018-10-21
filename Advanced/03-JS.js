@@ -192,13 +192,22 @@ function f() {
 
 // ================= 练习5
 f();
-function f() {
+// console.log(arr);
+// console.log(obj);
+function f() { // 
 	for(var k=0;k<10;k++) {
 		console.log(k);
 	}
 	console.log(k); // js 无块级作用域
+
+	var arr = [1,2,3];
+	var obj = {age:19};
 }
 
+arr = [1,2,3,4,5,6];
+obj = {age:199};
+console.log(arr);
+console.log(obj);
 
 
 
